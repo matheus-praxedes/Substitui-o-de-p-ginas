@@ -43,8 +43,8 @@ public class Main{
 		}
 	
 		Algoritmos fifo = new Algoritmos(numero_quadros);
-		Algoritmos otm = new Algoritmos(numero_quadros);
-		Algoritmos lru = new Algoritmos(numero_quadros);
+		Algoritmos otm  = new Algoritmos(numero_quadros);
+		Algoritmos lru  = new Algoritmos(numero_quadros);
 	
 
 		fifo.FIFO(sequencia_referencia);
