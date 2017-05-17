@@ -63,11 +63,11 @@ public class Algoritmos{
 
 	public void OTM (List<Entradas> lista){
 
-		int BASE  	      = 0;
-		int max_index     = 0;		
-		int j 		      = 0;
-		int tamanho       = lista.size();
-		int frame_index   = 0;
+		int BASE  	   	= 0;
+		int max_index  	= 0;		
+		int j 		   	= 0;
+		int tamanho    	= lista.size();
+		int frame_index	= 0;
 
 		Entradas valor;
 		quadros           = new ArrayList<>(); 
@@ -121,7 +121,7 @@ public class Algoritmos{
 		ArrayList<Entradas> pilha = new ArrayList<>(numero_de_quadros);
 		final int BASE = numero_de_quadros-1;
 		final int TOPO = 0;
-		printList(lista);
+		
 		for (Entradas entrada : lista) {
 			aux = false;
 			

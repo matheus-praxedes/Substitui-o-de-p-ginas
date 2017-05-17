@@ -25,8 +25,8 @@ public class Main{
 
 		int numero_quadros = 0;
 		List<Entradas> sequencia_referencia = new ArrayList<>();
+		List<Entradas> sequencia_referencia_otm = new ArrayList<>();
 
-	
 		try {
 			
 		    BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
@@ -42,15 +42,19 @@ public class Main{
 		      
 		}
 	
+		for(int i = 0; i < sequencia_referencia.size() ; i++){
+
+			sequencia_referencia_otm.add(sequencia_referencia.get(i));
+		}
+
 		Algoritmos fifo = new Algoritmos(numero_quadros);
 		Algoritmos otm  = new Algoritmos(numero_quadros);
 		Algoritmos lru  = new Algoritmos(numero_quadros);
 	
 
 		fifo.FIFO(sequencia_referencia);
-		otm.OTM(sequencia_referencia);
+		otm.OTM(sequencia_referencia_otm);
 		lru.LRU(sequencia_referencia);
-
 	}
 }
 
